@@ -16,117 +16,137 @@
   <body>
     <div class="container">
       <!-- Header Starts -->
-      <div class="header">
+      <header class="header">
         <a href="/" class="header__logolink"></a>
         <img src="./images/logo.svg" alt="Website Logo" />
         <button class="header__button" style="background-color: red">
           Try it Free
         </button>
-      </div>
+      </header>
+      
       <!-- Content Starts -->
-      <div class="content">
-        <div class="content__cardOne">
-          <div class="content__cardOne--text">
-            <h2 class='cardOne__text--header'>Grow Together</h1>
-            <p class='cardOne__text--body'>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversation you miss out on with a feedback form.</p>
-          </div>
-          <div class="content__cardOne--image"></div>
+      <main class="content">
+
+        <div class="banner">
+          <section class="banner banner-info">
+            <h1 class='banner-info__title'>Build The Community Your Fans Will Love</h1>
+            <p class='banner-info__text'>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.</p>
+            <button class="banner-info__button">Get Started For Free</button>
+          </section>
+
+          
+          <img src="./images/illustration-mockups.svg" alt="Illustration Mockups Image">
         </div>
-        <div class="content__cardTwo">
-          <div class="content__cardTwo--image"></div>
-          <div class="content__cardTwo--text">
-            <h2 class='cardTwo__text--header'>Flowing Conversations</h1>
-            <p class='cardTwo__text--body'>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+        
+        <div class="card">
+          <section class="card card-one__info">
+            <h2 class='card-one__title'>Grow Together</h1>
+            <p class='card-one__text'>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversation you miss out on with a feedback form.</p>
           </div>
+          <img src="./images/illustration-grow-together.svg" alt="Illustration Grow Together Image" class='card-one__image'>
         </div>
-        <div class="content__cardThree">
-          <div class="content__cardThree--text">
-            <h2 class='cardThree__text--header'>Your Users</h1>
-            <p class='cardThree__text--body'>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
-          </div>
-          <div class="content__cardThree--image"></div>
+        
+        
+        <div class="card">
+          <section class="card card-two__info">
+            <img src="./images/illustration-flowing-conversation.svg" alt="Illustration Flowing Conversation Image" class='card-two__image'>
+            <h2 class='card-two__title'>Flowing Conversations</h1>
+            <p class='card-two__text'>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+            </section>
+        </div>
+
+
+        <div class="card">
+          <section class="card card-three__info">
+            <h2 class='card-three__title'>Your Users</h1>
+            <p class='card-three__text'>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+            <img src="./images/illustration-your-users.svg" alt="Illustration Your Users Image" class='card-three__image'> 
+          </section>
         </div>
         <!-- Content Ends -->
 
         <!-- Floater Card -->
-        <div class="content__cardFloat">
-          <h1 class="content__cardFloat--text">Ready to Build Your Community?</div>
-          <button class="content__cardFloat--button">Get Started For Free</button>
+        <div class="card-float">
+          <h1 class="card-float__title">Ready to Build Your Community?</div>
+          <button class="card-float__text">Get Started For Free</button>
         </div>
 
-      </div>
+      </main>
+
       <!-- Footer Starts -->
-      <div class="footer">
+      <footer>
 
-        <!-- Footer Block One -->
-        <div class="footer__blockOne">
+        <div class="footer-data">
           <!-- Footer Logo -->
-          <img src="./images/logo.svg" alt="Website Logo Footer" />
+          <div class="footer-data__contact">
+            <div class="footer-data__logo">
+              <img src="./images/logo.svg" alt="Website Logo Footer" />
+            </div>
+              
+            <div class="footer-data__location">
+              <img class src="" alt="">
+              <p class='footer__location--text'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
 
-          <div class="footer__location">
-            <img class src="" alt="">
-            <p class='footer__location--text'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+            <div class="footer__phone">
+              <img src="" alt="">
+              <p class='footer__phone--text'>+1-543-123-4567</p>
+            </div>
+
+            <div class="footer__email">
+              <img src="" alt="">
+              <p class='footer__email--text'>example@huddle.com</p>
+            </div>
           </div>
-
-          <div class="footer__phone">
+          
+          <!-- Footer Block Two -->
+          <div class="footer-data__info">
+            <ul>
+              <li>
+                <a href="/pages/about-us">About Us</a>
+              </li>
+              <li>
+                <a href="/pages/what-we-do">What We Do</a>
+              </li>
+              <li>
+                <a href="/pages/faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Footer Block Three -->
+          <div class="footer-data__info">
+            <ul>
+              <li>
+                <a href="/pages/careers">Career</a>
+              </li>
+              <li>
+                <a href="/pages/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/pages/contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Socials -->
+          <div class="footer-data__social">
+            <!-- facebook -->
             <img src="" alt="">
-            <p class='footer__phone--text'>+1-543-123-4567</p>
-          </div>
-
-          <div class="footer__email">
+            <!-- twitter -->
             <img src="" alt="">
-            <p class='footer__email--text'>example@huddle.com</p>
+            <!-- instagram -->
+            <img src="" alt="">
+  
           </div>
         </div>
-        
-        <!-- Footer Block Two -->
-        <div class="footer__blockTwo">
-          <ul>
-            <li>
-              <a href="/pages/about-us">About Us</a>
-            </li>
-            <li>
-              <a href="/pages/what-we-do">What We Do</a>
-            </li>
-            <li>
-              <a href="/pages/faq">FAQ</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Footer Block Three -->
-        <div class="footer__blockThree">
-          <ul>
-            <li>
-              <a href="/pages/careers">Career</a>
-            </li>
-            <li>
-              <a href="/pages/blog">Blog</a>
-            </li>
-            <li>
-              <a href="/pages/contact-us">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Socials -->
-        <div class="footer__social">
-          <!-- facebook -->
-          <img src="" alt="">
-          <!-- twitter -->
-          <img src="" alt="">
-          <!-- instagram -->
-          <img src="" alt="">
-
-        </div>
-
         <!-- Copyright -->
-        <div class="footer__copyright">
-          <p class='footer__copyright--text'>© Copyright 2022 Huddle. All rights reserved.</p>
+        <div class="copyright">
+          <p class='copyright__text'>© Copyright 2022 Huddle. All rights reserved.</p>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
