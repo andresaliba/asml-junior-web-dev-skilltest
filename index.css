@@ -25,11 +25,20 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
   background-size: cover;
   background-attachment: fixed;
 }
 .header > img {
-  align-self: flex-start;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
 
 .banner {
@@ -50,9 +59,10 @@ header {
 }
 
 .footer-data {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 
 main {
 }
@@ -64,6 +74,12 @@ h1 {
 }
 
 .header__button {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
   align-self: flex-end;
   background-color: var(--pink);
   -webkit-border-radius: 27px;
