@@ -37,7 +37,7 @@ header {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  align-self: auto;
+  align-self: flex-start;
   order: 0;
 }
 
@@ -79,17 +79,16 @@ h1 {
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
-  order: 0;
   align-self: flex-end;
-  background-color: var(--pink);
-  -webkit-border-radius: 27px;
-  -moz-border-radius: 27px;
-  border-radius: 27px;
+  order: 0;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   height: 50px;
   line-height: 50px;
   color: #000000;
-  font-family: Open Sans;
   width: 200px;
+  font-family: Open Sans;
   font-size: 20px;
   font-weight: 700;
   padding: 0;
