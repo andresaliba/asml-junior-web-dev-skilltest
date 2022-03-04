@@ -33,8 +33,25 @@ header {
 }
 
 .banner {
+  display: flex;
+  flex-direction: row;
   background-image: url(./images/bg-hero-desktop.svg);
   background-size: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-float {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-data {
+    display: flex;
+    flex-direction: row;
 }
 
 main {
@@ -47,7 +64,7 @@ h1 {
 }
 
 .header__button {
-    align-self: flex-end;
+  align-self: flex-end;
   background-color: var(--pink);
   -webkit-border-radius: 27px;
   -moz-border-radius: 27px;
