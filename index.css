@@ -23,16 +23,13 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
   background-size: cover;
   background-attachment: fixed;
 }
 .header > img {
-    align-self: flex-start;
-}
-.header button {
-    background-color: var(--pink);
+  align-self: flex-start;
 }
 
 .banner {
@@ -44,12 +41,13 @@ main {
 }
 
 h1 {
-    color: var(--darkcyan);
+  color: var(--darkcyan);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
 .header__button {
+  background-color: var(--pink);
   -webkit-border-radius: 27px;
   -moz-border-radius: 27px;
   border-radius: 27px;
