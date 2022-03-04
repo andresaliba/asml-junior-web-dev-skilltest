@@ -116,7 +116,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   padding: 0;
-  background-color: var(--pink);
+  background-color: hsl(322, 100%, 66%);
   -webkit-box-shadow: 1px 1px 10px 0 #313232;
   -moz-box-shadow: 1px 1px 10px 0 #313232;
   box-shadow: 1px 1px 10px 0 #313232;
@@ -175,11 +175,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   padding: 0;
-  background-color: var(--pink);
-  -webkit-box-shadow: 1px 1px 10px 0 #313232;
-  -moz-box-shadow: 1px 1px 10px 0 #313232;
-  box-shadow: 1px 1px 10px 0 #313232;
-  
+  background-color: hsl(322, 100%, 66%);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
