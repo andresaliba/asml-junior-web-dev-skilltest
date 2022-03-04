@@ -16,7 +16,7 @@ html {
 
 body {
   padding: 10px;
-  margin: 10px;
+  margin: 59px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -28,8 +28,7 @@ h1 {
   font-weight: 600;
 }
 
-/* Header */
-
+/* ----------- Header */
 header {
   display: flex;
   flex-direction: row;
@@ -84,7 +83,7 @@ header {
   color: 179, 188, 194;
 }
 
-/* Banner */
+/* ----------- Banner */
 .banner {
   display: flex;
   flex-direction: row;
@@ -132,7 +131,7 @@ header {
   color: 179, 188, 194;
 }
 
-/* Cards */
+/* ----------- Cards */
 .card {
   display: flex;
   flex-direction: row;
@@ -141,8 +140,8 @@ header {
   border-radius: 20px;
   box-shadow: 0 4px 8px black;
   border-color: red;
-    width: 500px;
-    height: 500px;
+  width: 500px;
+  height: 500px;
 }
 
 .card__info {
