@@ -15,8 +15,6 @@ html {
 }
 
 body {
-  /* padding: 10px; */
-  margin: 200px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -38,6 +36,10 @@ header {
   align-content: stretch;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.container {
+    margin: 500px;
 }
 
 .header > img {
