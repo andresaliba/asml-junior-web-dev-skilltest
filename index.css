@@ -75,7 +75,6 @@ header {
   box-shadow: 1px 1px 10px 0 #313232;
   border: double #337fed 0;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
   text-align: center;
 }
@@ -137,6 +136,9 @@ header {
 .card {
   display: flex;
   flex-direction: row;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
 }
 
 .card__info {
@@ -177,7 +179,7 @@ header {
   -webkit-box-shadow: 1px 1px 10px 0 #313232;
   -moz-box-shadow: 1px 1px 10px 0 #313232;
   box-shadow: 1px 1px 10px 0 #313232;
-  border: double #337fed 0;
+  
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
