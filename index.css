@@ -136,9 +136,12 @@ header {
 .card {
   display: flex;
   flex-direction: row;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px black;
+  border-color: red;
+
 }
 
 .card__info {
