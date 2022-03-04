@@ -141,7 +141,8 @@ header {
   border-radius: 20px;
   box-shadow: 0 4px 8px black;
   border-color: red;
-
+    width: 500px;
+    height: 500px;
 }
 
 .card__info {
