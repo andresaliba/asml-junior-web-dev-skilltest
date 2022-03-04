@@ -1,5 +1,77 @@
+/* General Styles */
+/* 
+Mobile: 375px
+Desktop: 1440px 
+*/
+:root {
+  --pink: hsl(322, 100%, 66);
+  --palecyan: hsl(193, 100%, 96%);
+  --darkcyan: hsl(192, 100%, 9%);
+  --grayblue: hsl(208, 11%, 55%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
 header {
-    background-image: url(./images/bg-hero-desktop.svg);
-    background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header > img {
+    align-self: flex-start;
+}
+.header button {
+    background-color: var(--pink);
+}
+
+.banner {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-size: auto;
+}
+
+main {
+}
+
+h1 {
+    color: var(--darkcyan);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.header__button {
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  border-radius: 27px;
+  height: 50px;
+  line-height: 50px;
+  color: #000000;
+  font-family: Open Sans;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 10px 0 #313232;
+  -moz-box-shadow: 1px 1px 10px 0 #313232;
+  box-shadow: 1px 1px 10px 0 #313232;
+  border: double #337fed 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header__button:hover {
+  color: white;
 }
