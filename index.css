@@ -12,6 +12,7 @@ Desktop: 1440px
 
 html {
   height: 100%;
+  font-size: 18px;
 }
 
 body {
@@ -39,9 +40,9 @@ header {
 }
 
 .container {
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .header > img {
@@ -56,19 +57,18 @@ header {
 .header__button {
   display: inline-block;
   padding: 0.3em 1.2em;
-  margin: 0 .03em 0.3em 0;
+  margin: 0 0.03em 0.3em 0;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0 #313232;
+  border-radius: 2em;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: flex-end;
-  border-radius: 2em;
-  color: #000000;
-  width: 200px;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 10px 0 #313232;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -93,33 +93,23 @@ header {
 }
 
 .banner-info__button {
-  display: block;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.03em 0.3em 0;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 1px 1px 10px 0 #313232;
+  color: #000000;
+  border-radius: 2em;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  align-self: auto;
-  align-self: flex-end;
-  order: 0;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  height: 50px;
-  line-height: 50px;
-  color: #000000;
-  width: 200px;
+  align-self: flex-start;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0;
-  background-color: hsl(322, 100%, 66%);
-  -webkit-box-shadow: 1px 1px 10px 0 #313232;
-  -moz-box-shadow: 1px 1px 10px 0 #313232;
-  box-shadow: 1px 1px 10px 0 #313232;
-  border: double #337fed 0;
   text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
 }
 
 .banner-info__button:hover {
@@ -156,29 +146,23 @@ header {
 }
 
 .card-float__button {
-  display: block;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.03em 0.3em 0;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 1px 1px 10px 0 #313232;
+  color: #000000;
+  border-radius: 2em;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  align-self: auto;
-  align-self: flex-end;
-  order: 0;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  height: 50px;
-  line-height: 50px;
-  color: #000000;
-  width: 200px;
+  align-self: center;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0;
-  background-color: hsl(322, 100%, 66%);
   text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
 }
 
 .card-float__button:hover {
