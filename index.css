@@ -11,8 +11,9 @@ Desktop: 1440px
 }
 
 html {
-  height: 100%;
+  /* height: 100%; */
   font-size: 18px;
+  color: var(--darkcyan);
 }
 
 body {
@@ -25,6 +26,7 @@ h1 {
   color: var(--darkcyan);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 2.2rem;
 }
 
 /* ----------- Header */
@@ -37,30 +39,50 @@ header {
   align-content: stretch;
   background-size: cover;
   background-attachment: fixed;
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  /* max-height: 100vw; */
 }
 
 .container {
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  display: grid;
+  /* height: 100%; */
+
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
 }
 
-.header > img {
+.nav {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  border-style: solid;
+  border-color: red;
+}
+
+.nav > a {
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: flex-start;
-  order: 0;
+  border-style: solid;
+  border-color: blue;
 }
 
-.header__button {
+.nav > button {
   display: inline-block;
-  padding: 0.3em 1.2em;
+  padding: 0.6em 4em;
   margin: 0 0.03em 0.3em 0;
   background-color: #ffffff;
-  color: #383737a8;
-  box-shadow: 1px 1px 10px 0 #313232;
+  color: var(--darkcyan);
+  box-shadow: 1px 1px 10px 0 #31323257;
   border-radius: 2em;
   flex-grow: 0;
   flex-shrink: 1;
@@ -74,31 +96,46 @@ header {
   cursor: pointer;
 }
 
-.header__button:hover {
-  background-color: 179, 188, 194;
-  color: 179, 188, 194;
+.nav > button:hover {
+  background-color: hsl(0, 0%, 99%);
+  color: var(--grayblue);
 }
 
 /* ----------- Banner */
 .banner {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  background-image: url(./images/bg-hero-desktop.svg);
-  background-size: auto;
+  flex-grow: 1;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
 }
 
-.banner-info {
+.banner > section {
+  border-style: solid;
+  border-color: red;
+  flex-basis: 35%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.banner > img {
+  /* max-width: 100%; */
+  /* max-height: 100vh; */
+  flex-basis: content;
+  border-style: solid;
+  border-color: red;
 }
 
 .banner-info__button {
   display: inline-block;
-  padding: 0.3em 1.2em;
-  margin: 0 0.03em 0.3em 0;
-  background-color: hsl(322, 100%, 66%);
-  box-shadow: 1px 1px 10px 0 #313232;
-  color: #383737a8;
+  padding: 0.5em 2em;
+  margin: 0 0.05em 0.05em 0;
+  background-color: var(--pink);
+  box-shadow: 1px 1px 10px 0 #31323257;
+  color: var(--palecyan);
   border-radius: 2em;
   flex-grow: 0;
   flex-shrink: 1;
@@ -121,12 +158,13 @@ header {
 .card {
   display: flex;
   flex-direction: row;
-  padding-bottom: 3rem;
+  justify-content: center;
+  margin: 3rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px black;
-  border-color: red;
-  width: 500px;
-  height: 500px;
+  border-style: solid;
+  border-color: blue;
+  width: 50%;
 }
 
 .card__info {
@@ -137,19 +175,16 @@ header {
 .card-float {
   display: flex;
   flex-direction: column;
-}
-
-.footer-data {
-  display: flex;
-  flex-direction: row;
+  border-style: solid;
+  border-color: green;
 }
 
 .card-float__button {
   display: inline-block;
   padding: 0.3em 1.2em;
-  margin: 0 0.03em 0.3em 0;
+  margin: 0 0.5em 0.5em 0;
   background-color: hsl(322, 100%, 66%);
-  box-shadow: 1px 1px 10px 0 #313232;
+  box-shadow: 1px 1px 10px 0 #31323257;
   color: #383737a8;
   border-radius: 2em;
   flex-grow: 0;
@@ -167,4 +202,12 @@ header {
 .card-float__button:hover {
   background-color: 179, 188, 194;
   color: 179, 188, 194;
+}
+
+/* -----------s Footer */
+.footer-data {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: purple;
 }
