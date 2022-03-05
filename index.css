@@ -5,9 +5,10 @@ Desktop: 1440px
 */
 :root {
   --pink: hsl(322, 100%, 66%);
+  --palepink: hsl(322, 91%, 71%);
   --palecyan: hsl(193, 100%, 96%);
   --darkcyan: hsl(192, 100%, 9%);
-  --grayblue: hsl(208, 11%, 55%);
+  --paleblue: hsl(208, 11%, 55%);
 }
 
 html {
@@ -29,6 +30,10 @@ h1 {
   font-size: 2.2rem;
 }
 
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* ----------- Header */
 header {
   display: flex;
@@ -41,15 +46,10 @@ header {
   background-attachment: fixed;
   background-image: url(./images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
-  /* max-height: 100vw; */
 }
 
 .container {
   display: grid;
-  /* height: 100%; */
-
-  /* margin-left: 50px; */
-  /* margin-right: 50px; */
 }
 
 .nav {
@@ -62,8 +62,6 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   align-content: stretch;
-  border-style: solid;
-  border-color: red;
 }
 
 .nav > a {
@@ -72,8 +70,6 @@ header {
   flex-shrink: 1;
   flex-basis: auto;
   align-self: flex-start;
-  border-style: solid;
-  border-color: blue;
 }
 
 .nav > button {
@@ -84,6 +80,7 @@ header {
   color: var(--darkcyan);
   box-shadow: 1px 1px 10px 0 #31323257;
   border-radius: 2em;
+  border: 0;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -98,7 +95,7 @@ header {
 
 .nav > button:hover {
   background-color: hsl(0, 0%, 99%);
-  color: var(--grayblue);
+  color: var(--paleblue);
 }
 
 /* ----------- Banner */
@@ -113,8 +110,6 @@ header {
 }
 
 .banner > section {
-  border-style: solid;
-  border-color: red;
   flex-basis: 35%;
   display: flex;
   flex-direction: column;
@@ -122,11 +117,7 @@ header {
 }
 
 .banner > img {
-  /* max-width: 100%; */
-  /* max-height: 100vh; */
   flex-basis: content;
-  border-style: solid;
-  border-color: red;
 }
 
 .banner-info__button {
@@ -137,6 +128,7 @@ header {
   box-shadow: 1px 1px 10px 0 #31323257;
   color: var(--palecyan);
   border-radius: 2em;
+  border: 0;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -144,49 +136,75 @@ header {
   font-family: Open Sans;
   font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
   text-align: center;
   cursor: pointer;
 }
 
 .banner-info__button:hover {
-  background-color: 179, 188, 194;
-  color: 179, 188, 194;
+  background-color: var(--palepink);
+  color: var(--palecyan);
 }
 
 /* ----------- Cards */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px black;
-  border-style: solid;
-  border-color: blue;
-  width: 50%;
+  flex-grow: 1;
+  margin-top: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(153, 152, 152, 0.315);
+  width: 85%;
+  background-color: white;
 }
 
-.card__info {
+.card > section {
+  margin: 4.4rem;
   display: flex;
   flex-direction: column;
 }
+.card > img {
+  padding: 2rem;
+  /* padding-top: 2rem; */
+  /* padding-right: 2rem; */
+}
+
+.card-two__image {
+  padding-left: 2rem;
+}
+
 
 .card-float {
+  border: 0;
+  font-family: Open;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(153, 152, 152, 0.315);
+  margin-top: 5rem;
+  position: relative;
+  z-index: 7;
+  top: 5%;
+}
+
+.card-float > section {
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: green;
+  margin: 2.2rem;
 }
 
 .card-float__button {
   display: inline-block;
-  padding: 0.3em 1.2em;
-  margin: 0 0.5em 0.5em 0;
-  background-color: hsl(322, 100%, 66%);
+  padding: 0.5em 2em;
+  margin: 0 0.05em 0.05em 0;
+  background-color: var(--pink);
   box-shadow: 1px 1px 10px 0 #31323257;
-  color: #383737a8;
+  color: var(--palecyan);
   border-radius: 2em;
+  border: 0;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -194,7 +212,6 @@ header {
   font-family: Open Sans;
   font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
   text-align: center;
   cursor: pointer;
 }
@@ -209,5 +226,6 @@ header {
   display: flex;
   flex-direction: row;
   border-style: solid;
-  border-color: purple;
+  background-color: var(--darkcyan);
+  /* border-color: purple; */
 }
