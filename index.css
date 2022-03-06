@@ -74,8 +74,8 @@ header {
 
 .nav > button {
   display: inline-block;
-  padding: 0.6em 4em;
-  margin: 0 0.03em 0.3em 0;
+  padding: 1em 4em;
+  margin: 0 0.03em 0.03em 0;
   background-color: #ffffff;
   color: var(--darkcyan);
   box-shadow: 1px 1px 10px 0 #31323257;
