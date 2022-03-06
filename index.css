@@ -378,6 +378,12 @@ footer > img {
         border-radius: 1rem;
     }
 
+    .card-float__button {
+        padding: 1em 5em;
+        margin: 0 0.05em 0.05em 0;
+
+    }
+
     footer {
         justify-content: left;
         text-align: center;
